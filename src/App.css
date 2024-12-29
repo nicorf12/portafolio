@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #252525;
+  overflow-x: hidden;
+}
+
+body h1 {
+  color: #CDBEA4;
+  text-align: center;
+  padding: 75px; /* Ajustar el padding */
+}
+
+body p {
+  color: white;
+  text-align: left; /* Ajustar el texto a la izquierda */
+  padding: 0 50px; /* Agregar padding a los costados (izquierda y derecha) */
+}

@@ -1,0 +1,10 @@
+.contact-methods p a {
+    color: #007bff;  /* Cambia a un color azul más atractivo */
+    text-decoration: none;  /* Elimina el subrayado */
+  }
+  
+.contact-methods p a:hover {
+    color: #0056b3;  /* Cambia a un color diferente cuando el usuario pasa el cursor */
+    text-decoration: underline;  /* Agrega un subrayado al pasar el cursor */
+}
+  

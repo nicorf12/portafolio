@@ -1,0 +1,68 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 0 0 8px 8px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.navbar.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Diseño predeterminado para links */
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #5ABDD8;
+}
+
+/* Diseño responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between; /* Espaciado entre los elementos */
+    padding: 10px 20px;
+  }
+
+  .navbar a {
+    font-size: 1rem; /* Reduce el tamaño de los textos */
+    margin: 0 10px; /* Espaciado más pequeño */
+  }
+}
+
+/* Diseño para pantallas extra pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Cambia la dirección de los links */
+      align-items: center; /* Centra los links horizontalmente */
+      padding: 10px 15px;
+    }
+  
+    .navbar a {
+      font-size: 0.9rem; /* Tamaño más pequeño para móviles */
+      margin: 5px 0; /* Espaciado vertical */
+      text-align: center; /* Asegura que el texto esté centrado */
+    }
+  }
+  

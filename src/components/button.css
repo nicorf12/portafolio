@@ -1,0 +1,28 @@
+.button {
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px 24px; /* Tamaño del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    padding: 10px;
+}
+
+.button.github {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+}
+
+.button.github:hover {
+    background-color: grey; /* Fondo gris */
+    color: white; /* Texto blanco */
+}
+
+.button.details {
+    background-color: #5ABDD8; /* Fondo azul hielo */
+    color: white; /* Texto blanco */
+}
+
+.button.details:hover {
+    background-color: #4aaac0; /* Color de fondo al pasar el cursor */
+}

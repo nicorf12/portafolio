@@ -1,0 +1,49 @@
+.project-card {
+    flex: 1 1 200px; /* Permite que los elementos crezcan y se encojan, con un tamaño base de 200px */
+    min-width: 300px; /* Ancho mínimo */
+    max-width: 400px; /* Ancho máximo */
+    min-height: 200px; /* Alto fijo para que los elementos sean cuadrados */
+    padding: 10px; /* Espacio entre los elementos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: 8px;
+    background-color: #555555;
+    transition: transform 0.3s ease; /* Agrega una transición suave al agrandado */
+    cursor: pointer; /* Muestra un cursor de puntero para indicar que es clickeable */
+}
+
+.project-card:hover {
+    background-color: #666666; /* Gris ligeramente más claro cuando el mouse está encima */
+}
+
+.project-card.expanded {
+    transform: scale(1.07); /* Agranda el card cuando está seleccionado */
+    z-index: 10; /* Asegura que el card seleccionado se muestre encima de los demás */
+    background-color: white;
+}
+
+.project-card.expanded p {
+    color: gray; /* Asegura que el texto sea visible */
+}
+
+.project-card h3 {
+    color: #5ABDD8;
+    margin: 0;
+    padding: 10px;
+}
+
+.project-card p {
+    color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+}
+
+.labels-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las etiquetas se ajusten a una nueva fila si no caben en una sola */
+    gap: 8px; /* Espacio entre las etiquetas */
+    margin: 10px; /* Espacio superior para separar las etiquetas del contenido anterior */
+  }
+  

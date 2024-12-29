@@ -1,0 +1,86 @@
+{
+    "menu": [
+        {
+            "title": "Inicio",
+            "url": "#home"
+        },
+        {
+            "title": "Sobre mí",
+            "url": "#about"
+        },
+        {
+            "title": "Proyectos",
+            "url": "#projects"
+        },
+        {
+            "title": "Metas",
+            "url": "#goals"
+        },
+        {
+            "title": "Contacto",
+            "url": "#contact"
+        }
+    ],
+    "header": {
+        "title": "HOLA, SOY ",
+        "name": "NICOLAS",
+        "subtitle": "ESTUDIANTE DE INGENIERÍA INFORMÁTICA"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "description": "¡Hola! Soy Nicolás, estudiante de Ingeniería Informática en la Universidad de Buenos Aires, actualmente en tercer año de carrera. Apasionado por la tecnología y el aprendizaje continuo, mi principal interés radica en el campo de la ciberseguridad, un área que considero esencial para proteger a las personas y organizaciones en un mundo cada vez más digitalizado. Aunque mi interés esté centrado en la seguridad, estoy abierto a todo tipo de proyectos que me permitan aprender y contribuir en diversas áreas tecnológicas.\n\nMe apasiona entender cómo funcionan las cosas desde su núcleo y cómo pueden ser vulneradas. Esta curiosidad me motiva a especializarme en ciberseguridad, un campo que considero esencial para proteger a las personas y organizaciones en un mundo cada vez más digitalizado. Sin embargo, también disfruto desarrollando proyectos interesantes en otras áreas, lo que me permite ampliar mi conocimiento y adaptarme a diferentes desafíos.",
+        "image": "foto.svg"
+    },
+    "projects": [
+        {
+            "title": "Gestor de Contraseñas",
+            "description": "Este es mi principal proyecto: un gestor de contraseñas desarrollado en Go. A través de este proyecto, he profundizado en la seguridad de contraseñas y el manejo seguro de datos sensibles. Estoy en constante mejora de su estructura y funcionalidades",
+            "buttonText": "Ver detalles",
+            "className": "details",
+            "labels": ["Go", "Fyne", "SQLite"],
+            "images": ["gestor_contraseñas_1.svg", "gestor_contraseñas_2.svg"]
+        },
+        {
+            "title": "Juego en Java",
+            "description": "He desarrollado un juego interactivo utilizando Java y JavaFX como parte de un trabajo práctico en la facultad. Este proyecto me permitió trabajar con la interfaz gráfica de usuario (GUI) y la programación orientada a objetos. Aunque el juego es sencillo, tiene una estructura flexible que me permite seguir ampliando sus funcionalidades.",
+            "buttonText": "Ver detalles",
+            "className": "details",
+            "labels": ["Java", "JavaFX"],
+            "images": ["robots.svg"]
+        },
+        {
+            "title": "Generador de fractales",
+            "description": "Un proyecto hecho en Clojure, donde implementé un algoritmo basado en sistemas-L para crear fractales visualmente atractivos. Aunque aún estoy aprendiendo programación funcional, este proyecto me ha ayudado a comprender mejor este paradigma y sus aplicaciones.",
+            "buttonText": "Ver detalles",
+            "className": "details",
+            "labels": ["Clojure"],
+            "images": ["fractal_1.svg"]
+        },
+        {
+            "title": "Gestor de Tareas",
+            "description": "Desarrollé una aplicación sencilla para organizar y gestionar tareas utilizando React en el frontend y Spring en el backend como parte de un proyecto académico. Este proyecto me permitió trabajar en equipo y entender mejor la integración entre diferentes tecnologías.",
+            "buttonText": "Ver detalles",
+            "className": "details",
+            "labels": ["Java", "Javascript", "MySql", "SpringBoot", "Docker", "React", "Material UI", "Bootstrap"],
+            "images": ["gestor_tareas.svg"]
+        }
+    ],
+    "goals": {
+        "title": "Metas",
+        "description": "Mi principal objetivo es especializarme en ciberseguridad y seguridad informática. Estoy comprometido a desarrollar proyectos relacionados y a aprender constantemente nuevas herramientas y técnicas para proteger los sistemas y datos de los usuarios. Sin embargo, también estoy abierto a todo tipo de proyectos que me permitan expandir mis conocimientos y contribuir en diferentes áreas tecnológicas.\n\nA lo largo de mi carrera universitaria, me he enfocado en mejorar mis habilidades técnicas con el fin de aportar al mundo de la seguridad informática y desarrollar soluciones robustas frente a amenazas cibernéticas. Además, valoro la colaboración y el intercambio de ideas con otros profesionales, ya que siempre hay algo nuevo que aprender al trabajar en equipo.\n\nAunque reconozco que las herramientas de testing son mi punto débil, estoy enfocado en mejorar mis habilidades en esta área para fortalecer mis proyectos y asegurar la calidad del software que desarrollo."
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": "Si tienes alguna pregunta, sugerencia o simplemente quieres charlar, ¡no dudes en contactarme! Estoy abierto a colaboraciones, proyectos interesantes y nuevas oportunidades de aprendizaje. Puedes enviarme un mensaje a través de correo o via instagram.",
+        "medios": [
+            {
+                "title": "Correo electrónico profesional",
+                "url": "nicolasaromano12@gmail.com"
+            },
+            {
+                "title": "Instagram",
+                "url": "https://www.instagram.com/nicor_12/"
+            }
+        ]
+    }
+}

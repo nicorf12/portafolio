@@ -1,0 +1,105 @@
+.about-me {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1b1b1b;
+  }
+  
+  .about-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+  }
+  
+  .about-header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #e8dba1;
+  }
+  
+  .about-content {
+    display: flex;
+    padding: 40px;
+    background-color: #35607a;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a la siguiente línea */
+  }
+  
+  .about-text {
+    flex: 2;
+    padding-right: 20px;
+    order: 1; /* Orden inicial del texto */
+  }
+  
+  .about-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2; /* Orden inicial de la imagen */
+  }
+  
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+  }
+  
+  .about-skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap; /* Permitir que las columnas se ajusten a la siguiente línea */
+  }
+  
+  .skills-column {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center; /* Alinear el encabezado al centro */
+  }
+  
+  .skills-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;   /* Alinear el encabezado a la izquierda */
+  }
+  
+  .skills-column p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: center; /* Alinear los párrafos a la izquierda */
+    color: gray
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Apilar los elementos verticalmente */
+      padding: 20px; /* Reducir el padding en pantallas pequeñas */
+    }
+  
+    .about-image {
+      order: 1; /* Mover la imagen arriba */
+      margin-bottom: 20px; /* Añadir un espacio debajo de la imagen */
+    }
+  
+    .about-text {
+      order: 2; /* Mover el texto debajo de la imagen */
+      padding-right: 0; /* Eliminar el padding lateral */
+    }
+
+    .about-skills {
+        flex-direction: column; /* Apilar las columnas verticalmente */
+        align-items: center; /* Centrar los elementos */
+        
+    }
+    
+    .skills-column {
+        margin-bottom: 20px; /* Añadir espacio entre las columnas */
+        text-align: center; /* Alinear el texto al centro */
+    }
+  }
