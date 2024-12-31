@@ -31,11 +31,11 @@
     "header": {
         "title": "HELLO, I AM ",
         "name": "NICOLAS",
-        "subtitle": "COMPUTER SCIENCE STUDENT"
+        "subtitle": "COMPUTER ENGINEERING STUDENT"
     },
     "about": {
         "title": "About Me",
-        "description": "Hello! I'm Nicolás, a Computer Science student at the University of Buenos Aires, currently in my third year. Passionate about technology and continuous learning, my main interest lies in cybersecurity, an area I believe is essential to protect people and organizations in an increasingly digitalized world. While my interest is focused on security, I am open to all types of projects that allow me to learn and contribute in various technological areas.\n\nI am passionate about understanding how things work from their core and how they can be breached. This curiosity motivates me to specialize in cybersecurity, an area I consider crucial for protecting people and organizations in a more and more digitalized world. However, I also enjoy developing interesting projects in other fields, which allows me to expand my knowledge and adapt to different challenges.",
+        "description": "Hello! I'm Nicolás, a Computer Engineering student at the University of Buenos Aires, currently in my third year. Passionate about technology and continuous learning, my main interest lies in cybersecurity, an area I believe is essential to protect people and organizations in an increasingly digitalized world. While my interest is focused on security, I am open to all types of projects that allow me to learn and contribute in various technological areas.\n\nI am passionate about understanding how things work from their core and how they can be breached. This curiosity motivates me to specialize in cybersecurity, an area I consider crucial for protecting people and organizations in a more and more digitalized world. However, I also enjoy developing interesting projects in other fields, which allows me to expand my knowledge and adapt to different challenges.",
         "tools": [
             {
                 "title": "Development Environments",

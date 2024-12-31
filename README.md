@@ -1,8 +1,24 @@
-# React + Vite
+# Portafolio de Nicolás Romano
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a mi portafolio! Este es el repositorio donde puedes encontrar información sobre mí, mis proyectos y mis habilidades. Es una página web personal que muestra mi trabajo, mis intereses en el campo de la tecnología, y mi formación como estudiante de Ingeniería Informática en la Universidad de Buenos Aires.
 
-Currently, two official plugins are available:
+Este sitio está diseñado para dar a los posibles empleadores, colaboradores o cualquier persona interesada en mi trabajo, una visión clara de lo que puedo ofrecer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
+
+- **Proyectos**: Una lista de mis proyectos más importantes y recientes, con descripciones detalladas.
+- **Sobre mí**: Información sobre mi formación, mis intereses en ciberseguridad, y mis habilidades técnicas.
+- **Habilidades**: Un desglose de las herramientas y lenguajes de programación que manejo.
+- **Contacto**: Forma de ponerse en contacto conmigo para colaboraciones o trabajos.
+
+## 🌐 Tecnologías Utilizadas
+
+Este portafolio está construido con las siguientes tecnologías:
+
+- **React**: Para construir la interfaz de usuario interactiva.
+- **Vite**: Como bundler rápido y eficiente para la aplicación.
+- **CSS**: Para los estilos de la página.
+
+
+   ```bash
+   git clone https://github.com/tu-usuario/portafolio.git
