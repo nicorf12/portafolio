@@ -18,7 +18,9 @@ const ProjectCard = ({ title, description, labels, buttonText, className, isSele
         ))
       }
       </div>
-      <Button children={buttonText} className={className}></Button>
+      {
+      //<Button children={buttonText} className={className}></Button>
+      }
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import './contact.css';
 
 const Contact = ({ contact }) => {
     return (
@@ -9,11 +10,11 @@ const Contact = ({ contact }) => {
             <div className="contact-methods">
                 {contact.medios.map((medio, index) => (
                     <p key={index}>
-                        {medio.title}:
+                        {medio.title}: {' '}
                         {medio.title.toLowerCase().includes("correo") ? (
                             <a href={`mailto:${medio.url}`}>{medio.url}</a>
                         ) : (
-                            <a href={medio.url} target="_blank" rel="noopener noreferrer">{medio.url}</a>
+                            <a href={medio.url} target="_blank">{medio.url}</a>
                         )}
                     </p>
                 ))}

@@ -51,6 +51,14 @@
   }
 }
 
+.settings-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
 /* Diseño para pantallas extra pequeñas */
 @media (max-width: 768px) {
     .navbar {

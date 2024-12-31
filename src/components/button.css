@@ -26,3 +26,11 @@
 .button.details:hover {
     background-color: #4aaac0; /* Color de fondo al pasar el cursor */
 }
+
+.button.settings {
+    background-color: transparent;
+}
+
+.button.settings:hover {
+    background-color: #5ABDD8;
+}

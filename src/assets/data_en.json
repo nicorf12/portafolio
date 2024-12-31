@@ -1,0 +1,130 @@
+{
+    "menu": {
+        "settings": {
+            "title": "Settings",
+            "languaje": "Select a language",
+            "theme": "Select a theme"
+        },
+        "items": [
+            {
+                "title": "Home",
+                "url": "#home"
+            },
+            {
+                "title": "About Me",
+                "url": "#about"
+            },
+            {
+                "title": "Projects",
+                "url": "#projects"
+            },
+            {
+                "title": "Goals",
+                "url": "#goals"
+            },
+            {
+                "title": "Contact",
+                "url": "#contact"
+            }
+        ]
+    },
+    "header": {
+        "title": "HELLO, I AM ",
+        "name": "NICOLAS",
+        "subtitle": "COMPUTER SCIENCE STUDENT"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Hello! I'm Nicolás, a Computer Science student at the University of Buenos Aires, currently in my third year. Passionate about technology and continuous learning, my main interest lies in cybersecurity, an area I believe is essential to protect people and organizations in an increasingly digitalized world. While my interest is focused on security, I am open to all types of projects that allow me to learn and contribute in various technological areas.\n\nI am passionate about understanding how things work from their core and how they can be breached. This curiosity motivates me to specialize in cybersecurity, an area I consider crucial for protecting people and organizations in a more and more digitalized world. However, I also enjoy developing interesting projects in other fields, which allows me to expand my knowledge and adapt to different challenges.",
+        "tools": [
+            {
+                "title": "Development Environments",
+                "items": ["Visual Studio Code", "IntelliJ IDEA", "Goland"]
+            },
+            {
+                "title": "Tools",
+                "items": ["Git", "Github", "Docker", "Postman", "Bash"]
+            },
+            {
+                "title": "Languages",
+                "items": ["Go", "Python", "C", "Java", "Javascript", "Clojure"]
+            },
+            {
+                "title": "Databases",
+                "items": ["SQLite", "MySQL", "PostgreSQL", "MongoDB", "Neo4j"]
+            },
+            {
+                "title": "Frameworks",
+                "items": ["React", "SpringBoot", "JavaFX"]
+            },
+            {
+                "title": "Operating Systems",
+                "items": ["Linux", "Windows"]
+            },
+            {
+                "title": "Others",
+                "items": ["Fyne", "Material UI", "Bootstrap"]
+            }
+        ],
+        "image": "foto.svg"
+    },
+    "projects": {
+        "title": "Projects",
+        "projectsList": [
+            {
+                "title": "Password Manager",
+                "description": "This is my main project: a password manager developed in Go. Through this project, I have deepened my understanding of password security and the safe handling of sensitive data. I am continuously improving its structure and functionalities.",
+                "buttonText": "See details",
+                "className": "details",
+                "labels": ["Go", "Fyne", "SQLite"],
+                "images": ["gestor_contraseñas_1.svg", "gestor_contraseñas_2.svg"],
+                "extraDetails": ""
+            },
+            {
+                "title": "Java Game",
+                "description": "I developed an interactive game using Java and JavaFX as part of a practical assignment in college. This project allowed me to work with the graphical user interface (GUI) and object-oriented programming. While the game is simple, it has a flexible structure that allows me to keep expanding its functionalities.",
+                "buttonText": "See details",
+                "className": "details",
+                "labels": ["Java", "JavaFX"],
+                "images": ["robots.svg"],
+                "extraDetails": ""
+            },
+            {
+                "title": "Fractal Generator",
+                "description": "A project made in Clojure, where I implemented an algorithm based on L-systems to create visually appealing fractals. While I'm still learning functional programming, this project has helped me understand this paradigm and its applications better.",
+                "buttonText": "See details",
+                "className": "details",
+                "labels": ["Clojure"],
+                "images": ["fractal_1.svg"],
+                "extraDetails": ""
+            },
+            {
+                "title": "Task Manager",
+                "description": "I developed a simple application to organize and manage tasks using React for the frontend and Spring for the backend as part of an academic project. This project allowed me to work in a team and better understand the integration of different technologies.",
+                "buttonText": "See details",
+                "className": "details",
+                "labels": ["Java", "Javascript", "MySql", "SpringBoot", "Docker", "React", "Material UI", "Bootstrap"],
+                "images": ["gestor_tareas.svg"],
+                "extraDetails": ""
+            }
+        ]
+    },
+    "goals": {
+        "title": "Goals",
+        "description": "My main goal is to specialize in cybersecurity and information security. I am committed to developing related projects and constantly learning new tools and techniques to protect systems and user data. However, I am also open to all kinds of projects that allow me to expand my knowledge and contribute to different technological areas.\n\nThroughout my university career, I have focused on improving my technical skills in order to contribute to the world of cybersecurity and develop robust solutions to counter cyber threats. Additionally, I value collaboration and the exchange of ideas with other professionals, as there is always something new to learn when working in a team.\n\nAlthough I recognize that testing tools are my weak point, I am focused on improving my skills in this area to strengthen my projects and ensure the quality of the software I develop."
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "If you have any questions, suggestions, or just want to chat, feel free to contact me! I am open to collaborations, interesting projects, and new learning opportunities. You can send me a message via email or Instagram.",
+        "medios": [
+            {
+                "title": "Professional Email",
+                "url": "nicolasaromano12@gmail.com"
+            },
+            {
+                "title": "Instagram",
+                "url": "https://www.instagram.com/nicor_12/"
+            }
+        ]
+    }
+}

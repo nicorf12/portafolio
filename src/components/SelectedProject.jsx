@@ -13,7 +13,7 @@ const SelectedProject = ({ selectedProject }) => {
         ))}
       </div>
       <div className="extra-details">
-        <p>Detalles adicionales del proyecto...</p>
+        <p>{selectedProject.extraDetails}</p>
       </div>
     </div>
   );
