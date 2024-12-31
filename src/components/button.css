@@ -1,36 +1,40 @@
+@import '../themes.css';
+
 .button {
-    border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 12px 24px; /* Tamaño del botón */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
-    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
 }
 
 .button.github {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
+    background-color: var(--text-color); /* Usando variables de color dinámicas */
+    color: var(--background-color);
 }
 
 .button.github:hover {
-    background-color: grey; /* Fondo gris */
-    color: white; /* Texto blanco */
+    background-color: var(--hover-navbar);
+    color: var(--text-color);
 }
 
 .button.details {
-    background-color: #5ABDD8; /* Fondo azul hielo */
-    color: white; /* Texto blanco */
+    background-color: var(--card-title-color);
+    color: var(--background-color);
 }
 
 .button.details:hover {
-    background-color: #4aaac0; /* Color de fondo al pasar el cursor */
+    background-color: var(--hover-card-background-color);
+    color: var(--text-color);
 }
 
 .button.settings {
     background-color: transparent;
+    color: var(--text-color);
 }
 
 .button.settings:hover {
-    background-color: #5ABDD8;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
 }

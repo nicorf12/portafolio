@@ -1,14 +1,16 @@
+@import '../themes';
+
 .hero-banner {
   position: relative;
   height: 100vh;
-  background-image: url('..//assets/1359465.webp'); /* Ruta a tu imagen de fondo */
+  background-image: var(--image-background); /* Ruta a tu imagen de fondo */
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  
 }
 
 .hero-banner::after {
@@ -18,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Oscurece ligeramente */
+  background-color: var(--filter-color-background); /* Oscurece ligeramente */
   backdrop-filter: blur(3px); /* Agrega el desenfoque */
   z-index: 1; /* Asegura que esté detrás del contenido */
   pointer-events: none; /* Evita que interfiera con la interacción */
@@ -32,16 +34,18 @@
   justify-content: center;
   align-items: center;
   text-align: center; /* Centra el texto dentro de .hero-content */
+  
 }
 
 .hero-content h1 {
   font-size: 3rem;
   font-weight: bold;
   margin: 0;
+  color: var(--text-color);
 }
 
 .hero-content .highlight {
-  color: #e8dba1; /* Color destacado para el nombre */
+  color: var(--highlight-color); /* Color destacado para el nombre */
 }
 
 .hero-content p {

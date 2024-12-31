@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import "./HeroBanner.css"; // Archivo CSS para estilos
 
 const HeroBanner = ({header}) => {

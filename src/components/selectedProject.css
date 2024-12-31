@@ -1,5 +1,7 @@
+@import '../themes.css';
+
 .project-focus {
-  background-color: #f8f9fa;
+  background-color: var(--selected-card-background-color);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -11,13 +13,13 @@
 
 .project-focus h2 {
   font-size: 2rem;
-  color: #5ABDD8;
+  color: var(--selected-card-title-color);
   margin-bottom: 10px;
 }
 
 .project-focus p {
   font-size: 1rem;
-  color: #666;
+  color: var(--selected-card-text-color);
   line-height: 1.5;
 }
 

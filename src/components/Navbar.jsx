@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import Button from './Button'
+import Button from './Button';
 import Settings from "./Settings"; // Componente para el menú emergente
 
-const Navbar = ({ menu, loadLanguageData }) => {
+const Navbar = ({ menu, loadLanguageData, changeTheme }) => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +15,8 @@ const Navbar = ({ menu, loadLanguageData }) => {
         setShowNavbar(true);
       } else if (window.scrollY > lastScrollY && window.scrollY > 50) {
         setShowNavbar(false);
+      } else if (window.scrollY < lastScrollY) {
+        setShowNavbar(true);
       }
       setLastScrollY(window.scrollY);
     };
@@ -21,40 +25,48 @@ const Navbar = ({ menu, loadLanguageData }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  const [openDialog, setOpenDialog] = useState(false);
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   const handleOpenDialog = () => {
-    setOpenDialog(true);
+    setOpenDialog(true); 
   };
 
   const handleCloseDialog = () => {
     setOpenDialog(false);
   };
 
-  const setTheme = (theme) => {
-    console.log('Tema seleccionado:', theme);
-  };
-  
   return (
     <nav className={`navbar ${showNavbar ? "visible" : "hidden"}`}>
-      {menu.items?.map((item, index) => (
-        <a key={index} href={item.url}>
-          {item.title}
-        </a>
-      ))}
-      <Button className="settings" onClick={handleOpenDialog}>
-        ⚙️
-      </Button>
+      <div className="navbar-container">
+        {/* Ícono de hamburguesa */}
+        <button className="hamburger-icon" onClick={handleToggleMenu}>
+          ☰
+        </button>
 
-      <Settings
-        settings={menu.settings}
-        open={openDialog}
-        onClose={handleCloseDialog}
-        setLanguage={loadLanguageData}
-        setTheme={setTheme}
-      />
+        {/* Enlaces del menú */}
+        <div className={`menu-items ${menuOpen ? "open" : ""}`}>
+          {menu.items?.map((item, index) => (
+            <a key={index} href={item.url}>
+              {item.title}
+            </a>
+          ))}
+        </div>
+
+        <Button className="settings" onClick={handleOpenDialog}>
+          ⚙️
+        </Button>
+
+        <Settings
+          settings={menu.settings}
+          open={openDialog}
+          onClose={handleCloseDialog}
+          setLanguage={loadLanguageData}
+          setTheme={changeTheme}
+        />
+      </div>
     </nav>
-    
   );
 };
 

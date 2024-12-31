@@ -1,9 +1,11 @@
+@import '../themes.css';
+
 .label {
     background-color: transparent;
-    border: 2px solid #F8EDE3;
+    border: 2px solid var(--label-color);
     border-radius: 12px;
     padding: 8px 16px;
     font-size: 16px;
-    color: #F8EDE3;
+    color: var(--label-color);
     display: inline-block;
 }

@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState("dark");
 
   const loadLanguageData = async (language) => {
     try {
@@ -22,21 +23,27 @@ function App() {
     }
   };
 
+  const changeTheme = (newTheme) => {
+    setTheme(newTheme);
+    document.body.setAttribute("data-theme", newTheme);
+  };
+
   useEffect(() => {
     loadLanguageData("es");
+    changeTheme("dark");
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>; // Indicador de carga
+    return <p>Loading...</p>;
   }
 
   if (!data) {
-    return <p>Error loading data.</p>; // Manejo de error
+    return <p>Error loading data.</p>;
   }
 
   return (
     <>
-      <Navbar menu={data.menu} loadLanguageData={loadLanguageData}/>
+      <Navbar menu={data.menu} loadLanguageData={loadLanguageData} changeTheme={changeTheme} />
       <HeaderBackground header={data.header} />
       <AboutMe about={data.about} />
       <Project projects={data.projects} />

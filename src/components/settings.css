@@ -1,36 +1,39 @@
 /* Settings.css */
 
+.settings-dialog {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Botones de idioma */
 .language-button {
-  background-color: white; /* Color verde */
-  color: #1976d2;
+  background-color: var(--button-background); /* Color del fondo del botón */
+  color: var(--button-text-color); /* Color del texto del botón */
   &:hover {
-    background-color: #1976d2; /* Color verde más oscuro */
-    color: white;
+    background-color: var(--button-hover-background); /* Fondo del botón al pasar el cursor */
+    color: var(--button-hover-text-color); /* Texto del botón al pasar el cursor */
   }
 }
-  
+
 /* Botones de tema */
 .theme-button {
-  background-color: white; /* Color verde */
-  color: #1976d2;
+  background-color: var(--button-background); /* Color del fondo del botón */
+  color: var(--button-text-color); /* Color del texto del botón */
   &:hover {
-    background-color: #1976d2; /* Color verde más oscuro */
-    color: white;
+    background-color: var(--button-hover-background); /* Fondo del botón al pasar el cursor */
+    color: var(--button-hover-text-color); /* Texto del botón al pasar el cursor */
   }
 }
 
 .button-box {
-  padding: 16px;  /* Agrega un poco de espacio alrededor del contenido dentro del Box */
+  padding: 16px; /* Espaciado alrededor del contenido dentro del Box */
   display: flex;
   flex-direction: column;
-  gap: 8px;  /* Espaciado entre los botones */
+  gap: 8px; /* Espaciado entre los botones */
 }
 
 /* Padding específico para los botones dentro del Box */
 .language-button, .theme-button {
   padding: 5px 10px; /* Ajusta el padding de los botones */
-  font-size: 14px;  /* Tamaño de la fuente */
+  font-size: 14px; /* Tamaño de la fuente */
 }
-  
-  

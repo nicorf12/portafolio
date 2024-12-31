@@ -3,8 +3,32 @@
         "settings": {
             "title": "Settings",
             "languaje": "Select a language",
-            "theme": "Select a theme"
-        },
+            "theme": "Select a theme",
+            "themes": [
+              {
+                "name": "Light",
+                "value": "light"
+              },
+              {
+                "name": "Dark",
+                "value": "dark"
+              },
+              {
+                "name": "Pink",
+                "value": "pink"
+              }
+            ],
+            "languajes": [
+              {
+                "name": "Spanish",
+                "value": "es"
+              },
+              {
+                "name": "English",
+                "value": "en"
+              }
+            ]
+          },
         "items": [
             {
                 "title": "Home",

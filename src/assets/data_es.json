@@ -3,7 +3,31 @@
         "settings": {
             "title": "Ajustes",
             "languaje": "Selecciona un lenguaje",
-            "theme": "Selecciona un tema"
+            "theme": "Selecciona un tema",
+            "themes": [
+                {
+                "name": "Claro",
+                "value": "light"
+                }, 
+                {
+                "name": "Oscuro",
+                "value": "dark"
+                }, 
+                {
+                "name": "Rosa",
+                "value": "pink"
+                }
+            ],
+            "languajes": [
+                {
+                "name": "Español",
+                "value": "es"
+                },
+                {
+                "name": "Inglés",
+                "value": "en"
+                }
+            ]
         },
         "items": [
             {

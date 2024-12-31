@@ -4,15 +4,22 @@
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra los elementos */
   align-items: center;
   padding: 15px 30px;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--backgground-navbar);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
   border-radius: 0 0 8px 8px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido dentro del navbar */
+  align-items: center;
+  width: 100%; /* Asegura que todo el navbar ocupe el ancho completo */
 }
 
 .navbar.hidden {
@@ -25,52 +32,65 @@
   opacity: 1;
 }
 
-/* Diseño predeterminado para links */
+.menu-items {
+  display: flex;
+  justify-content: center; /* Centra los enlaces dentro del menú */
+  align-items: center;
+  gap: 20px; /* Espacio entre los elementos del menú */
+  flex-wrap: nowrap;
+}
+
+.menu-items.open {
+  display: flex; /* Cuando el menú está abierto, los elementos se muestran */
+}
+
 .navbar a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 1.2rem;
-  margin: 0 20px;
   transition: color 0.3s ease;
+  padding: 10px;
 }
 
 .navbar a:hover {
-  color: #5ABDD8;
+  color: var(--hover-navbar);
+}
+
+/* Estilos para el icono de hamburguesa en móviles */
+.hamburger-icon {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
 }
 
 /* Diseño responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   .navbar {
-    justify-content: space-between; /* Espaciado entre los elementos */
+    justify-content: flex-start; /* En móviles, los items deben estar alineados a la izquierda */
     padding: 10px 20px;
   }
 
+  .menu-items {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column; /* Alinea los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+  }
+
+  .hamburger-icon {
+    display: block; /* Muestra el icono de hamburguesa */
+  }
+
+  .navbar-container {
+    justify-content: space-between; /* Espacio entre el icono y los enlaces en la vista móvil */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+  }
+
   .navbar a {
-    font-size: 1rem; /* Reduce el tamaño de los textos */
-    margin: 0 10px; /* Espaciado más pequeño */
+    font-size: 1rem;
+    margin: 10px 0; /* Espaciado entre los enlaces en dispositivos móviles */
   }
 }
-
-.settings-icon {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--text-color);
-}
-
-/* Diseño para pantallas extra pequeñas */
-@media (max-width: 768px) {
-    .navbar {
-      flex-direction: column; /* Cambia la dirección de los links */
-      align-items: center; /* Centra los links horizontalmente */
-      padding: 10px 15px;
-    }
-  
-    .navbar a {
-      font-size: 0.9rem; /* Tamaño más pequeño para móviles */
-      margin: 5px 0; /* Espaciado vertical */
-      text-align: center; /* Asegura que el texto esté centrado */
-    }
-  }
-  
