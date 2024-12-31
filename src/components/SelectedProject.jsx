@@ -9,7 +9,7 @@ const SelectedProject = ({ selectedProject }) => {
       <p>{selectedProject.description}</p>
       <div className="image-container">
         {selectedProject.images.map((image, index) => (
-          <img key={index} src={'./src/assets/'+image} alt={`Project image ${index + 1}`} />
+          <img key={index} src={'/portafolio/assets/'+image} alt={`Project image ${index + 1}`} />
         ))}
       </div>
       <div className="extra-details">

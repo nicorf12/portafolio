@@ -18,7 +18,7 @@ const AboutMe = ({ about }) => {
           {renderDescription(about.description)}
         </div>
         <div className="about-image">
-          <img src={`./src/assets/${about.image}`} alt="Nicolás" />
+          <img src={`/portafolio/assets/foto.svg`} alt="Nicolás" />
         </div>
       </section>
       <section className="about-skills">
