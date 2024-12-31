@@ -18,7 +18,3 @@ Este portafolio está construido con las siguientes tecnologías:
 - **React**: Para construir la interfaz de usuario interactiva.
 - **Vite**: Como bundler rápido y eficiente para la aplicación.
 - **CSS**: Para los estilos de la página.
-
-
-   ```bash
-   git clone https://github.com/tu-usuario/portafolio.git
