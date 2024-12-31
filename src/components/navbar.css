@@ -10,7 +10,6 @@
   background: var(--backgground-navbar);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
-  border-radius: 0 0 8px 8px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -59,18 +58,21 @@
 /* Estilos para el icono de hamburguesa en móviles */
 .hamburger-icon {
   display: none; /* Oculto por defecto */
-  font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
   color: var(--text-color);
 }
 
+.hamburger-icon:hover {
+  background-color: var(--highlight-color);
+}
+
 /* Diseño responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   .navbar {
     justify-content: flex-start; /* En móviles, los items deben estar alineados a la izquierda */
-    padding: 10px 20px;
+    padding: 10px; /* Espaciado interno del navbar en móviles */
   }
 
   .menu-items {

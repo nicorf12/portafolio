@@ -78,17 +78,17 @@
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column; /* Apilar los elementos verticalmente */
-    padding: 20px; /* Reducir el padding en pantallas pequeñas */
+    padding: 0px; /* Reducir el padding en pantallas pequeñas */
   }
 
   .about-image {
     order: 1; /* Mover la imagen arriba */
-    margin-bottom: 20px; /* Añadir un espacio debajo de la imagen */
+    margin: 25px; /* Añadir un espacio debajo de la imagen */
   }
 
   .about-text {
     order: 2; /* Mover el texto debajo de la imagen */
-    padding-right: 0; /* Eliminar el padding lateral */
+    margin: 25px 0px
   }
 
   .about-skills {

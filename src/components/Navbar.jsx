@@ -40,12 +40,10 @@ const Navbar = ({ menu, loadLanguageData, changeTheme }) => {
   return (
     <nav className={`navbar ${showNavbar ? "visible" : "hidden"}`}>
       <div className="navbar-container">
-        {/* Ícono de hamburguesa */}
-        <button className="hamburger-icon" onClick={handleToggleMenu}>
+        <Button className="hamburger-icon" onClick={handleToggleMenu}>
           ☰
-        </button>
+        </Button>
 
-        {/* Enlaces del menú */}
         <div className={`menu-items ${menuOpen ? "open" : ""}`}>
           {menu.items?.map((item, index) => (
             <a key={index} href={item.url}>

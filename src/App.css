@@ -20,3 +20,9 @@ body p {
   text-align: left; /* Ajustar el texto a la izquierda */
   padding: 0 50px; /* Agregar padding a los costados (izquierda y derecha) */
 }
+
+@media (max-width: 768px) {
+  body p {
+    padding: 0 20px; /* Ajustar el padding */
+  }
+}
