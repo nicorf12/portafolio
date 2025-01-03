@@ -6,6 +6,7 @@ import HeaderBackground from "./sections/HeroBanner";
 import "./App.css";
 import Contact from "./sections/Contact";
 import Navbar from "./components/Navbar";
+import AnimatedSection from "./components/AnimatedSection";
 
 function App() {
   const [data, setData] = useState(null);
@@ -45,10 +46,18 @@ function App() {
     <>
       <Navbar menu={data.menu} loadLanguageData={loadLanguageData} changeTheme={changeTheme} />
       <HeaderBackground header={data.header} />
-      <AboutMe about={data.about} />
-      <Project projects={data.projects} />
-      <Goals goals={data.goals} />
-      <Contact contact={data.contact} />
+      <AnimatedSection>
+        <AboutMe about={data.about} />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Project projects={data.projects} />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Goals goals={data.goals} />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Contact contact={data.contact} />
+      </AnimatedSection>
     </>
   );
 }

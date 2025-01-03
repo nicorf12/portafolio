@@ -12,6 +12,7 @@
     align-items: left;
     border-radius: 8px;
     background-color: var(--card-background-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
     transition: transform 0.3s ease; /* Agrega una transición suave al agrandado */
     cursor: pointer; /* Muestra un cursor de puntero para indicar que es clickeable */
 }

@@ -20,6 +20,21 @@
   background-color: var(--secundary-background-color);
   flex-wrap: wrap; /* Permitir que los elementos se ajusten a la siguiente línea */
 }
+
+.about-glass {
+  background: linear-gradient(135deg, var(--glass-color-1), var(--glass-color-2));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  display: flex;
+  padding: 40px;
+  margin: 25px;
+  flex-wrap: wrap;
+}
+
   
 .about-text {
   flex: 2;
