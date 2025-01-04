@@ -2,6 +2,7 @@
 
 .about-me {
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
   
 .about-header {
@@ -94,6 +95,12 @@
   .about-content {
     flex-direction: column; /* Apilar los elementos verticalmente */
     padding: 0px; /* Reducir el padding en pantallas pequeñas */
+    margin: 0px;
+  }
+
+  .about-glass {
+    margin: 20px; /* Eliminar el margen */
+    padding: 0px; /* Añadir padding */
   }
 
   .about-image {
@@ -103,7 +110,12 @@
 
   .about-text {
     order: 2; /* Mover el texto debajo de la imagen */
-    margin: 25px 0px
+    margin: 25px 0px;
+    padding: 0px; /* Añadir padding */
+  }
+
+  .about-text p {
+    font-size: 14px; /* Reducir el tamaño del texto */
   }
 
   .about-skills {
