@@ -1,154 +1,259 @@
 {
-    "menu": {
-        "settings": {
-            "title": "Settings",
-            "languaje": "Select a language",
-            "theme": "Select a theme",
-            "themes": [
-              {
-                "name": "Light",
-                "value": "light"
-              },
-              {
-                "name": "Dark",
-                "value": "dark"
-              },
-              {
-                "name": "Pink",
-                "value": "pink"
-              }
-            ],
-            "languajes": [
-              {
-                "name": "Spanish",
-                "value": "es"
-              },
-              {
-                "name": "English",
-                "value": "en"
-              }
-            ]
-          },
-        "items": [
-            {
-                "title": "Home",
-                "url": "#home"
-            },
-            {
-                "title": "About Me",
-                "url": "#about"
-            },
-            {
-                "title": "Projects",
-                "url": "#projects"
-            },
-            {
-                "title": "Goals",
-                "url": "#goals"
-            },
-            {
-                "title": "Contact",
-                "url": "#contact"
-            }
-        ]
+  "menu": {
+    "settings": {
+      "title": "Settings",
+      "languaje": "Select a language",
+      "theme": "Select a theme",
+      "themes": [
+        {
+          "name": "Light",
+          "value": "light"
+        },
+        {
+          "name": "Dark",
+          "value": "dark"
+        },
+        {
+          "name": "Pink",
+          "value": "pink"
+        }
+      ],
+      "languajes": [
+        {
+          "name": "Spanish",
+          "value": "es"
+        },
+        {
+          "name": "English",
+          "value": "en"
+        }
+      ]
     },
-    "header": {
-        "title": "HELLO, I AM ",
-        "name": "NICOLAS",
-        "subtitle": "COMPUTER ENGINEERING STUDENT"
-    },
-    "about": {
+    "items": [
+      {
+        "title": "Home",
+        "url": "#home"
+      },
+      {
         "title": "About Me",
-        "description": "Hello! I'm Nicolás, a Computer Engineering student at the University of Buenos Aires, currently in my third year. Passionate about technology and continuous learning, my main interest lies in cybersecurity, an area I believe is essential to protect people and organizations in an increasingly digitalized world. While my interest is focused on security, I am open to all types of projects that allow me to learn and contribute in various technological areas.\n\nI am passionate about understanding how things work from their core and how they can be breached. This curiosity motivates me to specialize in cybersecurity, an area I consider crucial for protecting people and organizations in a more and more digitalized world. However, I also enjoy developing interesting projects in other fields, which allows me to expand my knowledge and adapt to different challenges.",
-        "tools": [
-            {
-                "title": "Development Environments",
-                "items": ["Visual Studio Code", "IntelliJ IDEA", "Goland"]
-            },
-            {
-                "title": "Tools",
-                "items": ["Git", "Github", "Docker", "Postman", "Bash"]
-            },
-            {
-                "title": "Languages",
-                "items": ["Go", "Python", "C", "Java", "Javascript", "Clojure"]
-            },
-            {
-                "title": "Databases",
-                "items": ["SQLite", "MySQL", "PostgreSQL", "MongoDB", "Neo4j"]
-            },
-            {
-                "title": "Frameworks",
-                "items": ["React", "SpringBoot", "JavaFX"]
-            },
-            {
-                "title": "Operating Systems",
-                "items": ["Linux", "Windows"]
-            },
-            {
-                "title": "Others",
-                "items": ["Fyne", "Material UI", "Bootstrap"]
-            }
-        ],
-        "image": "foto.svg"
-    },
-    "projects": {
+        "url": "#about"
+      },
+      {
+        "title": "Skills",
+        "url": "#skills"
+      },
+      {
         "title": "Projects",
-        "projectsList": [
-            {
-                "title": "Password Manager",
-                "description": "This is my main project: a password manager developed in Go. Through this project, I have deepened my understanding of password security and the safe handling of sensitive data. I am continuously improving its structure and functionalities.",
-                "buttonText": "See details",
-                "className": "details",
-                "labels": ["Go", "Fyne", "SQLite"],
-                "images": ["gestor_contraseñas_1.svg", "gestor_contraseñas_2.svg"],
-                "extraDetails": ""
-            },
-            {
-                "title": "Java Game",
-                "description": "I developed an interactive game using Java and JavaFX as part of a practical assignment in college. This project allowed me to work with the graphical user interface (GUI) and object-oriented programming. While the game is simple, it has a flexible structure that allows me to keep expanding its functionalities.",
-                "buttonText": "See details",
-                "className": "details",
-                "labels": ["Java", "JavaFX"],
-                "images": ["robots.svg"],
-                "extraDetails": ""
-            },
-            {
-                "title": "Fractal Generator",
-                "description": "A project made in Clojure, where I implemented an algorithm based on L-systems to create visually appealing fractals. While I'm still learning functional programming, this project has helped me understand this paradigm and its applications better.",
-                "buttonText": "See details",
-                "className": "details",
-                "labels": ["Clojure"],
-                "images": ["fractal_1.svg"],
-                "extraDetails": ""
-            },
-            {
-                "title": "Task Manager",
-                "description": "I developed a simple application to organize and manage tasks using React for the frontend and Spring for the backend as part of an academic project. This project allowed me to work in a team and better understand the integration of different technologies.",
-                "buttonText": "See details",
-                "className": "details",
-                "labels": ["Java", "Javascript", "MySql", "SpringBoot", "Docker", "React", "Material UI", "Bootstrap"],
-                "images": ["gestor_tareas.svg"],
-                "extraDetails": ""
-            }
-        ]
-    },
-    "goals": {
-        "title": "Goals",
-        "description": "My main goal is to specialize in cybersecurity and information security. I am committed to developing related projects and constantly learning new tools and techniques to protect systems and user data. However, I am also open to all kinds of projects that allow me to expand my knowledge and contribute to different technological areas.\n\nThroughout my university career, I have focused on improving my technical skills in order to contribute to the world of cybersecurity and develop robust solutions to counter cyber threats. Additionally, I value collaboration and the exchange of ideas with other professionals, as there is always something new to learn when working in a team.\n\nAlthough I recognize that testing tools are my weak point, I am focused on improving my skills in this area to strengthen my projects and ensure the quality of the software I develop."
-    },
-    "contact": {
+        "url": "#projects"
+      },
+      {
+        "title": "Certifications",
+        "url": "#certifications"
+      },
+      {
         "title": "Contact",
-        "description": "If you have any questions, suggestions, or just want to chat, feel free to contact me! I am open to collaborations, interesting projects, and new learning opportunities. You can send me a message via email or Instagram.",
-        "medios": [
-            {
-                "title": "Professional Email",
-                "url": "nicolasaromano12@gmail.com"
-            },
-            {
-                "title": "Instagram",
-                "url": "https://www.instagram.com/nicor_12/"
-            }
-        ]
+        "url": "#contact"
+      }
+    ]
+  },
+
+  "header": {
+    "title": "Hi, I'm ",
+    "name": "Nicolas",
+    "subtitle": "Computer Engineering Student",
+    "description": "Passionate about cybersecurity and software development. Computer Engineering student at the University of Buenos Aires.",
+    "buttons": {
+      "projects": "View Projects",
+      "contact": "Contact Me"
     }
+  },
+
+  "about": {
+    "title": "About Me",
+    "image": "foto.svg",
+
+    "sections": [
+      {
+        "title": "Academic Background",
+        "description": "I am a Computer Engineering student at the University of Buenos Aires, currently in my third year. My education includes the study of multiple programming paradigms, operating systems, networks, and computer security fundamentals.\n\nThroughout my studies, I have worked with languages such as C, Java, Go, Python, and Clojure, which allowed me to develop a solid understanding of different approaches to problem solving and system design."
+      },
+      {
+        "title": "Interests and Passions",
+        "description": "I am passionate about understanding how systems work at their core and analyzing how they can be compromised. This constant curiosity led me to develop a strong interest in cybersecurity.\n\nI enjoy both the challenge of securing systems and the process of developing solutions to complex problems. The intersection between software development and security is where I find the greatest motivation."
+      }
+    ],
+
+    "goals": [
+      {
+        "title": "Specialization",
+        "description": "To specialize in cybersecurity, with a focus on ethical pentesting and vulnerability analysis, aiming to protect critical systems and sensitive data."
+      },
+      {
+        "title": "Continuous Development",
+        "description": "To continue expanding my knowledge in different areas of software development in order to approach problems from multiple technical perspectives."
+      },
+      {
+        "title": "Real Impact",
+        "description": "To contribute to projects that generate a positive impact by protecting the privacy and security of individuals and organizations."
+      }
+    ],
+
+    "summary": "Although my main interest lies in cybersecurity, I believe versatility is essential in technology. I am open to all kinds of projects that allow me to learn, contribute, and adapt to different challenges. Every project is an opportunity to grow and develop new skills."
+  },
+
+  "projects": {
+    "title": "Projects",
+    "projectsList": [
+      {
+        "title": "Password Manager",
+        "description": "This is my main project: a password manager developed in Go. Through this project, I have deepened my knowledge of password security and secure handling of sensitive data. I am constantly improving its structure and functionality.",
+        "buttonText": "View Details",
+        "className": "details",
+        "labels": ["Go", "Fyne", "SQLite"],
+        "images": ["gestor_contraseñas_1.svg", "gestor_contraseñas_2.svg"],
+        "extraDetails": ""
+      },
+      {
+        "title": "Java Game",
+        "description": "I developed an interactive game using Java and JavaFX as part of an academic assignment. This project allowed me to work with graphical user interfaces (GUI) and object-oriented programming. Although the game is simple, it has a flexible structure that allows me to continue expanding its features.",
+        "buttonText": "View Details",
+        "className": "details",
+        "labels": ["Java", "JavaFX"],
+        "images": ["robots.svg"],
+        "extraDetails": ""
+      },
+      {
+        "title": "Fractal Generator",
+        "description": "A project developed in Clojure where I implemented an algorithm based on L-systems to generate visually appealing fractals. Although I am still learning functional programming, this project helped me better understand this paradigm and its applications.",
+        "buttonText": "View Details",
+        "className": "details",
+        "labels": ["Clojure"],
+        "images": ["fractal_1.svg"],
+        "extraDetails": ""
+      },
+      {
+        "title": "Task Manager",
+        "description": "I developed a simple application to organize and manage tasks using React on the frontend and Spring on the backend as part of an academic project. This experience allowed me to work in a team and better understand the integration between different technologies.",
+        "buttonText": "View Details",
+        "className": "details",
+        "labels": ["Java", "JavaScript", "MySQL", "SpringBoot", "Docker", "React", "Material UI", "Bootstrap"],
+        "images": ["gestor_tareas.svg"],
+        "extraDetails": ""
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact",
+    "description": "If you have any questions, suggestions, or just want to chat, feel free to contact me! I am open to collaborations, interesting projects, and new learning opportunities. You can reach me via email or Instagram.",
+    "medios": [
+      {
+        "title": "Professional Email",
+        "url": "nicolasaromano12@gmail.com"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/nicor_12/"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/nicolas--romano/"
+      }
+    ]
+  },
+
+  "certifications": {
+    "title": "Courses and Certifications",
+    "description": "Continuous learning and certifications obtained throughout my academic journey",
+    "list": [
+      {
+        "name": "IBM SkillsBuild Cybersecurity Certificate",
+        "abbr": "CyberSecurity",
+        "organization": "IBM SkillsBuild",
+        "year": "2025",
+        "color": "bg-purple-100 text-purple-700"
+      }
+    ]
+  },
+
+  "skills": {
+    "title": "Areas of Expertise",
+    "description": "Technical knowledge acquired in systems, programming, and cybersecurity fundamentals.",
+    "list": [
+      {
+        "icon": "Terminal",
+        "title": "Linux & Operating Systems",
+        "description": "Use of Linux systems for development, scripting, and basic environment administration.",
+        "items": [
+          "Linux CLI",
+          "Processes and permissions",
+          "bash (basic)",
+          "systemd",
+          "Development environments"
+        ]
+      },
+      {
+        "icon": "Code",
+        "title": "Programming",
+        "description": "Software development focused on logic, data structures, and process management.",
+        "items": [
+          "C",
+          "Java",
+          "Golang",
+          "Python",
+          "Structured programming",
+          "Memory management",
+          "Processes and concurrency"
+        ]
+      },
+      {
+        "icon": "Shield",
+        "title": "Cybersecurity Fundamentals",
+        "description": "Theoretical and practical knowledge of information security and system protection.",
+        "items": [
+          "Security principles",
+          "CIA model",
+          "User and permission management",
+          "Best practices",
+          "Threat concepts"
+        ]
+      },
+      {
+        "icon": "Lock",
+        "title": "Networking",
+        "description": "Understanding of networks and protocols for analysis and troubleshooting.",
+        "items": [
+          "TCP/IP",
+          "OSI Model",
+          "Ports and protocols",
+          "Network diagnostics",
+          "Firewall concepts"
+        ]
+      },
+      {
+        "icon": "Bug",
+        "title": "Databases",
+        "description": "Design and management of relational databases in local and containerized environments.",
+        "items": [
+          "PostgreSQL",
+          "SQL",
+          "Queries and joins",
+          "Relational algebra",
+          "pgAdmin"
+        ]
+      },
+      {
+        "icon": "Eye",
+        "title": "Tools and Work Environment",
+        "description": "Use of tools for development, version control, and reproducible environments.",
+        "items": [
+          "Git",
+          "Docker",
+          "Dockerfile",
+          "Containers",
+          "VS Code"
+        ]
+      }
+    ]
+  }
 }

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Goals = ({goals}) => {
     const renderDescription = (description) => {
         return description.split("\n").map((line, index) => (

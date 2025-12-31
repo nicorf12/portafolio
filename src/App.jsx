@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Project from "./sections/Projects";
-import Goals from "./sections/Goals";
+import Skills from "./sections/Skills";
 import AboutMe from "./sections/AboutMe";
 import HeaderBackground from "./sections/HeroBanner";
-import "./App.css";
 import Contact from "./sections/Contact";
+import Certifications from "./sections/Certifications";
 import Navbar from "./components/Navbar";
 import AnimatedSection from "./components/AnimatedSection";
 
@@ -43,22 +43,25 @@ function App() {
   }
 
   return (
-    <>
+    <div className="size-full">
       <Navbar menu={data.menu} loadLanguageData={loadLanguageData} changeTheme={changeTheme} />
       <HeaderBackground header={data.header} />
       <AnimatedSection>
         <AboutMe about={data.about} />
       </AnimatedSection>
       <AnimatedSection>
+        <Skills skills={data.skills} />
+      </AnimatedSection>
+      <AnimatedSection>
         <Project projects={data.projects} />
       </AnimatedSection>
       <AnimatedSection>
-        <Goals goals={data.goals} />
+        <Certifications certifications={data.certifications} />
       </AnimatedSection>
       <AnimatedSection>
         <Contact contact={data.contact} />
       </AnimatedSection>
-    </>
+    </div>
   );
 }
 
