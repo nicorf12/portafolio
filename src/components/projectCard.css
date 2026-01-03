@@ -1,5 +1,3 @@
-@import '../themes.css';
-
 .project-card {
     flex: 1 1 200px; /* Permite que los elementos crezcan y se encojan, con un tamaño base de 200px */
     min-width: 300px; /* Ancho mínimo */

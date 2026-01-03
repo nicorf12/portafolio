@@ -2,22 +2,7 @@
   "menu": {
     "settings": {
       "title": "Settings",
-      "languaje": "Select a language",
-      "theme": "Select a theme",
-      "themes": [
-        {
-          "name": "Light",
-          "value": "light"
-        },
-        {
-          "name": "Dark",
-          "value": "dark"
-        },
-        {
-          "name": "Pink",
-          "value": "pink"
-        }
-      ],
+      "language": "Select a language",
       "languajes": [
         {
           "name": "Spanish",
@@ -65,6 +50,11 @@
     "buttons": {
       "projects": "View Projects",
       "contact": "Contact Me"
+    },
+    "socials": {
+            "github": "https://github.com/nicorf12",
+            "linkedin": "https://www.linkedin.com/in/nicolas--romano/",
+            "email": "nicolasaromano12@gmail.com"
     }
   },
 
@@ -111,7 +101,7 @@
         "className": "details",
         "labels": ["Go", "Fyne", "SQLite"],
         "images": ["gestor_contraseñas_1.svg", "gestor_contraseñas_2.svg"],
-        "extraDetails": ""
+        "url": "https://github.com/nicorf12/passwordManager"
       },
       {
         "title": "Java Game",
@@ -120,7 +110,7 @@
         "className": "details",
         "labels": ["Java", "JavaFX"],
         "images": ["robots.svg"],
-        "extraDetails": ""
+        "url": "https://github.com/nicorf12/Paradigmas-de-programacion-TB025/tree/main/TP-robots"
       },
       {
         "title": "Fractal Generator",
@@ -129,7 +119,7 @@
         "className": "details",
         "labels": ["Clojure"],
         "images": ["fractal_1.svg"],
-        "extraDetails": ""
+        "url": "https://github.com/nicorf12/Paradigmas-de-programacion-TB025/tree/main/TP-sistemas-l"
       },
       {
         "title": "Task Manager",
@@ -138,14 +128,28 @@
         "className": "details",
         "labels": ["Java", "JavaScript", "MySQL", "SpringBoot", "Docker", "React", "Material UI", "Bootstrap"],
         "images": ["gestor_tareas.svg"],
-        "extraDetails": ""
+        "url": "https://github.com/nicorf12/ings_tribuE"
       }
     ]
   },
-
+  
   "contact": {
     "title": "Contact",
-    "description": "If you have any questions, suggestions, or just want to chat, feel free to contact me! I am open to collaborations, interesting projects, and new learning opportunities. You can reach me via email or Instagram.",
+    "description": "If you have any questions, suggestions, or just want to chat, feel free to reach out. I'm open to collaborations, interesting projects, and new learning opportunities.",
+    "socialsTitle": "Socials",
+    "form": {
+      "title": "Send me a message",
+      "subtitle": "I will get back to you as soon as possible",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "button": "Send message"
+    },
+    "cta": {
+      "title": "Let's collaborate",
+      "description": "Open to software development and cybersecurity projects",
+      "button": "View CV"
+    },
     "medios": [
       {
         "title": "Professional Email",

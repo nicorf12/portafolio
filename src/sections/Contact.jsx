@@ -9,15 +9,35 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
+import emailjs from "emailjs-com";
 
 const Contact = ({ contact }) => {
   const email = contact.medios.find(m =>
     m.title.toLowerCase().includes("correo")
   );
 
-  const instagram = contact.medios.find(m =>
-    m.title.toLowerCase().includes("instagram")
+  const redes = contact.medios.filter(
+    m => !m.title.toLowerCase().includes("correo")
   );
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0t6jt0j",
+        "template_yegqjab",
+        e.target,
+        "cmwa19cRjD9RPwO08"
+      )
+      .then(() => {
+        alert("Mensaje enviado correctamente");
+        e.target.reset();
+      })
+      .catch(() => {
+        alert("Error al enviar el mensaje");
+      });
+  };
 
   return (
     <section className="py-24 bg-slate-900 text-white" id="contact">
@@ -38,34 +58,54 @@ const Contact = ({ contact }) => {
           <Card className="bg-slate-800 border-slate-700">
             <CardHeader>
               <CardTitle className="text-white">
-                Envíame un mensaje
+                {contact.form?.title}
               </CardTitle>
               <CardDescription className="text-gray-400">
-                Te responderé lo antes posible
+                {contact.form?.subtitle}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block text-sm mb-2 text-white">Nombre</label>
-                  <Input className="bg-slate-700 border-slate-600 text-white placeholder:text-gray-400" />
-                </div>
-                <div>
-                  <label className="block text-sm mb-2 text-white">Email</label>
+                  <label className="block text-sm mb-2 text-white">
+                    {contact.form?.name}
+                  </label>
                   <Input
-                    type="email"
+                    name="name"
+                    required
                     className="bg-slate-700 border-slate-600 text-white placeholder:text-gray-400"
                   />
                 </div>
+
                 <div>
-                  <label className="block text-sm mb-2 text-white">Mensaje</label>
+                  <label className="block text-sm mb-2 text-white">
+                    {contact.form?.email}
+                  </label>
+                  <Input
+                    name="email"
+                    type="email"
+                    required
+                    className="bg-slate-700 border-slate-600 text-white placeholder:text-gray-400"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm mb-2 text-white">
+                    {contact.form?.message}
+                  </label>
                   <Textarea
+                    name="message"
                     rows={5}
+                    required
                     className="bg-slate-700 border-slate-600 text-white placeholder:text-gray-400 resize-none"
                   />
                 </div>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Enviar Mensaje
+
+                <Button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                >
+                  {contact.form?.button}
                 </Button>
               </form>
             </CardContent>
@@ -98,38 +138,34 @@ const Contact = ({ contact }) => {
             )}
 
             {/* Redes */}
-            {contact.medios.filter(m =>
-            !m.title.toLowerCase().includes("correo")
-            ).length > 0 && (
-            <Card className="bg-slate-800 border-slate-700">
+            {redes.length > 0 && (
+              <Card className="bg-slate-800 border-slate-700">
                 <CardContent className="pt-6">
-                <h3 className="text-white mb-4">Redes</h3>
+                  <h3 className="text-white mb-4">
+                    {contact.socialsTitle}
+                  </h3>
 
-                <div className="space-y-3">
-                    {contact.medios
-                    .filter(m => !m.title.toLowerCase().includes("correo"))
-                    .map((medio, index) => (
-                        <a
+                  <div className="space-y-3">
+                    {redes.map((medio, index) => (
+                      <a
                         key={index}
                         href={medio.url}
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-3 text-gray-400 hover:text-blue-400 transition-colors"
-                        >
+                      >
                         {medio.title.toLowerCase().includes("linkedin") && (
-                            <Linkedin className="w-5 h-5" />
+                          <Linkedin className="w-5 h-5" />
                         )}
-
                         {medio.title.toLowerCase().includes("instagram") && (
-                            <Github className="w-5 h-5" />
+                          <Github className="w-5 h-5" />
                         )}
-
-                        <span>{medio.url}</span>
-                        </a>
+                        <span>{medio.title}</span>
+                      </a>
                     ))}
-                </div>
+                  </div>
                 </CardContent>
-            </Card>
+              </Card>
             )}
 
             {/* CTA */}
@@ -139,13 +175,19 @@ const Contact = ({ contact }) => {
                   <Shield className="w-8 h-8 text-blue-300 mt-1" />
                   <div>
                     <h3 className="text-white mb-2">
-                      Colaboremos
+                      {contact.cta?.title}
                     </h3>
                     <p className="text-blue-200 text-sm mb-4">
-                      Abierto a proyectos de desarrollo y ciberseguridad
+                      {contact.cta?.description}
                     </p>
-                    <Button variant="secondary" size="sm">
-                      Ver CV
+                    <Button variant="secondary" size="sm" asChild>
+                      <a
+                        href="/portafolio/cv/CV_NicolasRomano_v2.0.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {contact.cta?.button}
+                      </a>
                     </Button>
                   </div>
                 </div>

@@ -2,22 +2,8 @@
     "menu": {
         "settings": {
             "title": "Ajustes",
-            "languaje": "Selecciona un lenguaje",
-            "theme": "Selecciona un tema",
-            "themes": [
-                {
-                "name": "Claro",
-                "value": "light"
-                }, 
-                {
-                "name": "Oscuro",
-                "value": "dark"
-                }, 
-                {
-                "name": "Rosa",
-                "value": "pink"
-                }
-            ],
+            "language": "Selecciona un lenguaje",
+            "close": "Cerrar",
             "languajes": [
                 {
                 "name": "Español",
@@ -64,6 +50,11 @@
         "buttons": {
             "projects": "Ver Proyectos",
             "contact": "Contactar"
+        },
+        "socials": {
+            "github": "https://github.com/nicorf12",
+            "linkedin": "https://www.linkedin.com/in/nicolas--romano/",
+            "email": "nicolasaromano12@gmail.com"
         }
     },
     "about": {
@@ -108,7 +99,7 @@
                 "className": "details",
                 "labels": ["Go", "Fyne", "SQLite"],
                 "images": ["gestor_contraseñas_1.svg", "gestor_contraseñas_2.svg"],
-                "extraDetails": ""
+                "url": "https://github.com/nicorf12/passwordManager"
             },
             {
                 "title": "Juego en Java",
@@ -117,7 +108,7 @@
                 "className": "details",
                 "labels": ["Java", "JavaFX"],
                 "images": ["robots.svg"],
-                "extraDetails": ""
+                "url": "https://github.com/nicorf12/Paradigmas-de-programacion-TB025/tree/main/TP-robots"
             },
             {
                 "title": "Generador de fractales",
@@ -126,7 +117,7 @@
                 "className": "details",
                 "labels": ["Clojure"],
                 "images": ["fractal_1.svg"],
-                "extraDetails": ""
+                "url": "https://github.com/nicorf12/Paradigmas-de-programacion-TB025/tree/main/TP-sistemas-l"
             },
             {
                 "title": "Gestor de Tareas",
@@ -135,28 +126,42 @@
                 "className": "details",
                 "labels": ["Java", "Javascript", "MySql", "SpringBoot", "Docker", "React", "Material UI", "Bootstrap"],
                 "images": ["gestor_tareas.svg"],
-                "extraDetails": ""
+                "url": "https://github.com/nicorf12/ings_tribuE"
             }
         ]
     },
     "contact": {
         "title": "Contacto",
-        "description": "Si tienes alguna pregunta, sugerencia o simplemente quieres charlar, ¡no dudes en contactarme! Estoy abierto a colaboraciones, proyectos interesantes y nuevas oportunidades de aprendizaje. Puedes enviarme un mensaje a través de correo o via instagram.",
+        "description": "Si tienes alguna pregunta, sugerencia o simplemente quieres charlar, ¡no dudes en contactarme! Estoy abierto a colaboraciones, proyectos interesantes y nuevas oportunidades de aprendizaje.",
+        "socialsTitle": "Redes",
+        "form": {
+            "title": "Envíame un mensaje",
+            "subtitle": "Te responderé lo antes posible",
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "button": "Enviar mensaje"
+        },
+        "cta": {
+            "title": "Colaboremos",
+            "description": "Abierto a proyectos de desarrollo de software y ciberseguridad",
+            "button": "Ver CV"
+        },
         "medios": [
             {
-                "title": "Correo electrónico profesional",
-                "url": "nicolasaromano12@gmail.com"
+            "title": "Correo electrónico profesional",
+            "url": "nicolasaromano12@gmail.com"
             },
             {
-                "title": "Instagram",
-                "url": "https://www.instagram.com/nicor_12/"
+            "title": "Instagram",
+            "url": "https://www.instagram.com/nicor_12/"
             },
             {
             "title": "LinkedIn",
             "url": "https://www.linkedin.com/in/nicolas--romano/"
             }
         ]
-    },
+        },
     "certifications": {
         "title": "Cursos y Certificaciones",
         "description": "Formación continua y certificaciones obtenidas durante mi trayectoria académica",

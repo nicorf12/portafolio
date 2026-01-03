@@ -7,9 +7,9 @@
   justify-content: center; /* Centra los elementos */
   align-items: center;
   padding: 15px 30px;
-  background: var(--backgground-navbar);
+  background: #1976d2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -37,6 +37,7 @@
   align-items: center;
   gap: 20px; /* Espacio entre los elementos del menú */
   flex-wrap: nowrap;
+  color: oklch(35% 0.03 260);
 }
 
 .menu-items.open {
@@ -49,10 +50,11 @@
   font-size: 1.2rem;
   transition: color 0.3s ease;
   padding: 10px;
+  color: #ffffff;
 }
 
 .navbar a:hover {
-  color: var(--hover-navbar);
+  color: #dbdbdb;
 }
 
 /* Estilos para el icono de hamburguesa en móviles */
@@ -61,7 +63,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--text-color);
+  color: #ffffff;
 }
 
 .hamburger-icon:hover {

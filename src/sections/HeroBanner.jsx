@@ -1,6 +1,10 @@
 import { Shield, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "../components/ui/button";
 
+const scrollTo = (id) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+};
+
 const HeroBanner = ({ header }) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900" id="home">
@@ -25,26 +29,31 @@ const HeroBanner = ({ header }) => {
         </p>
 
         <div className="flex gap-4 justify-center mb-12 flex-wrap">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+          <Button 
+            size="lg" 
+            className="bg-blue-600 hover:bg-blue-700"
+            onClick={() => scrollTo('projects')}
+          >
             Ver Proyectos
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="border-blue-400 text-blue-400 hover:bg-blue-400/10"
+            onClick={() => scrollTo('contact')}
           >
             Contactar
           </Button>
         </div>
 
         <div className="flex gap-6 justify-center">
-          <a href={header.github} className="text-gray-400 hover:text-blue-400">
+          <a href={header.socials.github} className="text-gray-400 hover:text-blue-400">
             <Github className="w-6 h-6" />
           </a>
-          <a href={header.linkedin} className="text-gray-400 hover:text-blue-400">
+          <a href={header.socials.linkedin} className="text-gray-400 hover:text-blue-400">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href={`mailto:${header.email}`} className="text-gray-400 hover:text-blue-400">
+          <a href={`mailto:${header.socials.email}`} className="text-gray-400 hover:text-blue-400">
             <Mail className="w-6 h-6" />
           </a>
         </div>

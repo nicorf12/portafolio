@@ -1,5 +1,3 @@
-@import '../themes.css';
-
 .project-focus {
   background-color: var(--selected-card-background-color);
   padding: 20px;

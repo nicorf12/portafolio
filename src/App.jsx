@@ -11,7 +11,6 @@ import AnimatedSection from "./components/AnimatedSection";
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [theme, setTheme] = useState("dark");
 
   const loadLanguageData = async (language) => {
     try {
@@ -24,14 +23,8 @@ function App() {
     }
   };
 
-  const changeTheme = (newTheme) => {
-    setTheme(newTheme);
-    document.body.setAttribute("data-theme", newTheme);
-  };
-
   useEffect(() => {
     loadLanguageData("es");
-    changeTheme("dark");
   }, []);
 
   if (loading) {
@@ -44,7 +37,7 @@ function App() {
 
   return (
     <div className="size-full">
-      <Navbar menu={data.menu} loadLanguageData={loadLanguageData} changeTheme={changeTheme} />
+      <Navbar menu={data.menu} loadLanguageData={loadLanguageData} />
       <HeaderBackground header={data.header} />
       <AnimatedSection>
         <AboutMe about={data.about} />
